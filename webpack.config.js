@@ -1,7 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const Dotenv = require('dotenv-webpack');
+const Dotenv = require('dotenv-webpack')
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 module.exports = {
   entry: './src/index.tsx',
@@ -11,6 +12,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'React weather',
+      favicon: path.join(__dirname, 'public', 'favicon.ico'),
       template: path.join(__dirname, 'public', 'index.html'),
     }),
     new CleanWebpackPlugin({
@@ -24,6 +27,8 @@ module.exports = {
       directory: path.join(__dirname, 'build'),
     },
     port: 3000,
+    hot: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -33,7 +38,7 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(png|jpg|gif|webp)$/i,
+        test: /\.(png|jpg|svg|webp)$/i,
         use: [
           {
             loader: 'url-loader',
@@ -43,9 +48,24 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\\.(png|jp(e*)g|svg|gif)$/,
+        use: ['file-loader'],
+      },
+      {
+        test: /\.css$/i,
+        use: ['css-loader'],
+      },
     ],
   },
   resolve: {
     extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
+    plugins: [
+      new TsconfigPathsPlugin({
+        configFile: './tsconfig.json',
+        extensions: ['.ts', '.tsx'],
+        mainFields: ['browser'],
+      }),
+    ],
   },
 }

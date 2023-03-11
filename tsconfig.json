@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "esModuleInterop": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -16,7 +17,20 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "paths": {}
+    "baseUrl": "./src",
+    "paths": {
+      "components/*": ["components/*"],
+      "interfaces/*": ["interfaces/*"],
+      "App/*": ["App/*"],
+      "styles/*": ["styles/*"],
+      "utils/*": ["utils/*"],
+      "assets/*": ["assets/*"]
+    }
   },
-  "include": ["src", "src/react-app-env.d.ts"]
+  "include": [
+    "src",
+    "src/react-app-env.d.ts",
+    "src/image.d.ts",
+    "src/components/forPages/Service/ArticleBlock/.tsx"
+  ]
 }
