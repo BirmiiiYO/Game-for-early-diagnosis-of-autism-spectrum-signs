@@ -1,5 +1,6 @@
+node_modules
+lib
 .git
 .vscode
 .husky
-node_modules
-webpack.config.js
+rollup.config.js
