@@ -1,45 +1,46 @@
-### `Игры для ранней диагностики признаков аутистического спектра`
+# Getting Started with Create React App
 
-Задания на фиксацию и прослеживания взгляда, движение глазных яблок, реакцию мимической мускулатуры
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1. на экране появляется геометрическая фигура на белом фоне (по очереди - красный круг, желтый треугольник, синий квадрат) - по центру, затем начинает смещаться по разным углам 
+## Available Scripts
 
-2. То же что в п.1, но предмет гаснет по центру и появляется то сверху слева, то снизу справа - и там тоже гаснет
+In the project directory, you can run:
 
-3. Разбегающийся предмет - например, по центру появляется красный шарик, и из него затем рассыпаются по всему экрану боле мелкие шарики
+### `yarn start`
 
-4. Картина постепенно наполняющейся комнаты - сначала появляется стул, потом стол, потом шкаф, лампа... а потом появляется человек. Картинка статична, изображения реальные
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-5. То же что в п.4, но появившийся человек начинает перемещаться по комнате (по экрану)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-6. Появляющееся и исчезающее статичное человеческое лицо
+### `yarn test`
 
-7. Человеческое лицо с двигающимися глазами (смотрят вверх, вниз, вращаются по кругу)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-8. Человеческое лицо, изображающее эмоции (улыбка, радость, восторг; злость, агрессию, ярость; страх, испуг)
+### `yarn build`
 
-9. Разговаривающий человек (читает стихи, поет песенку)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-10. Человек на экране по пояс, показывает рукой на какой-то появляющийся объект (например, воздушные шарики в верхнем углу экрана) - при этом человек сам смотрит то прямо, то на этот объект, и говорит "смотри!"
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-11. Реалистичный предмет, который движется по экрану и как будто "уходит" за него (например, ползущая ящерка или бабочка)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-12. Видеоряд - например, процесс вылупления цыпленка, или формирования бабочки из кокона (что-то из живой природы), плачущий младенец, вид костра с разлетающимися искрами, ребенок на качелях, восход солнца - чередование людей, животных, и неживого (в динамике)
+### `yarn eject`
 
-13. Перемещение взглядом объекта (нарисованного или реального) 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Задания на кистевой праксис (моторика кисти, руки)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. Повторение геометрических фигур и линий
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-2. Лабиринты разной сложности
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-3. Разукрашки разной сложности
+## Learn More
 
-4. Захват и перемещение объекта всей кистью, соединение/разъединение объектов
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-5. Игры на последовательность (проигрывание мелодий, выращивание цветка) - игра Покойо
-
-6. Размещение предмета по подобию, на весах (больше/ меньше)
-
-+ анализ крупной моторики в записи (как ребенок перемещается по комнате)
+To learn React, check out the [React documentation](https://reactjs.org/).
