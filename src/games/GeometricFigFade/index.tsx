@@ -5,7 +5,7 @@ import { GameContainer } from '@/styles'
 
 import { Figure } from './styles'
 
-export const GeometricFigMove: FC = () => {
+export const GeometricFigFade: FC = () => {
   const [activeId, setActiveId] = useState(0)
 
   useEffect(() => {

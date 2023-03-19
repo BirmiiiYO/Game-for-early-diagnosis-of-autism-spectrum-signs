@@ -1,10 +1,8 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import React from 'react'
-
 import { GeometricFigMove } from 'games/GeometricFigMove'
 
 export default {
-  title: 'GeometricFigMove',
+  title: 'Geometric figures move',
   component: GeometricFigMove,
 } as ComponentMeta<typeof GeometricFigMove>
 
