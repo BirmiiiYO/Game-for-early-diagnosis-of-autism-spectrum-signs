@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import { IFigure } from "./types";
+import { Figure } from "@/styles";
 
 const moveSquare = keyframes`
   0% {
@@ -25,31 +25,19 @@ const moveTriangle = keyframes`
     transform: translate(-50%, -50%);
   }
   100% {
-    transform: translate(-100%, -5000%);
+    transform: translate(500%, 30%);
   }
 `;
 
-export const Figure = styled.img<IFigure>`
-animation-duration: 5s;
-animation-fill-mode: forwards;
-animation-iteration-count: infinite;
+export const MoveFigure = styled(Figure)`
 animation-name: ${({animationFigure})=> {
-    switch(animationFigure) {
-        case 'circle':
-            return moveCircle
-        case 'square':
-            return moveSquare
-        case 'triangle':
-            return moveTriangle
-    }
+  switch(animationFigure) {
+      case 'circle':
+          return moveCircle
+      case 'square':
+          return moveSquare
+      case 'triangle':
+          return moveTriangle
+  }
 }};
-animation-timing-function: ease-in-out;
-background-color: #fff;
-display: ${({active})=> active ? 'block' : 'none'};
-height: 100px;
-left: 50%;
-position: absolute;
-top: 50%;
-transform: translate(-50%, -50%);
-width: 100px;
 `

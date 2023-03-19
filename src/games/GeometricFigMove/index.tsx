@@ -1,9 +1,9 @@
-import React, { FC, useEffect, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 
 import { shapes } from '@/assets/figures'
 import { GameContainer } from '@/styles'
 
-import { Figure } from './styles'
+import { MoveFigure } from './styles'
 
 export const GeometricFigMove: FC = () => {
   const [activeId, setActiveId] = useState(0)
@@ -18,7 +18,7 @@ export const GeometricFigMove: FC = () => {
   return (
     <GameContainer>
       {shapes.map(({id,image,figure})=> 
-      <Figure key={id} src={image} 
+      <MoveFigure key={id} src={image} 
       active={activeId === id} animationFigure={figure}/>)}
     </GameContainer>
   )

@@ -1,7 +1,9 @@
 import React from 'react'
 
+import { GameContainer } from '@/styles'
+
 export const  StaticFace = () => {
   return (
-    <div>StaticFace</div>
+    <GameContainer>StaticFace</GameContainer>
   )
 }

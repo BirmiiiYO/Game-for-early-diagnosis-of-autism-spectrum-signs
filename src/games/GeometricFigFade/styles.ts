@@ -1,55 +1,37 @@
 import styled, { keyframes } from "styled-components";
 
-import { IFigure } from "./types";
+import { Figure } from "@/styles";
+import { IFigureStyle } from "@/types/Shape";
 
-const moveSquare = keyframes`
+const fadeSquare = keyframes`
+0% { transform: scale(1) }
+100% {transform: scale(0) }
+`;
+
+const fadeCircle = keyframes`
+0% { transform: scale(1) }
+100% {transform: scale(0) }
+`;
+
+const fadeTriangle = keyframes`
   0% {
-    transform: translate(-50%, -50%);
+    transform: scale(1);
   }
   100% {
-    transform: translate(-1000%, -50%);
+    transform: scale(0);
+    opacity: 0;
   }
 `;
 
-const moveCircle = keyframes`
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    transform: translate(-10%, -990%);
-  }
-`;
-
-const moveTriangle = keyframes`
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    transform: translate(-100%, -5000%);
-  }
-`;
-
-export const Figure = styled.img<IFigure>`
-animation-duration: 5s;
-animation-fill-mode: forwards;
-animation-iteration-count: infinite;
+export const FadeFigure = styled(Figure)<IFigureStyle>`
 animation-name: ${({animationFigure})=> {
-    switch(animationFigure) {
-        case 'circle':
-            return moveCircle
-        case 'square':
-            return moveSquare
-        case 'triangle':
-            return moveTriangle
-    }
+  switch(animationFigure) {
+      case 'circle':
+          return fadeCircle
+      case 'square':
+          return fadeSquare
+      case 'triangle':
+          return fadeTriangle
+  }
 }};
-animation-timing-function: ease-in-out;
-background-color: #fff;
-display: ${({active})=> active ? 'block' : 'none'};
-height: 100px;
-left: 50%;
-position: absolute;
-top: 50%;
-transform: translate(-50%, -50%);
-width: 100px;
 `

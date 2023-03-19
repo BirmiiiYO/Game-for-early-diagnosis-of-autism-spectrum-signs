@@ -1,7 +1,9 @@
 import React from 'react'
 
+import { GameContainer } from '@/styles'
+
 export const FillingRoom = () => {
   return (
-    <div>FillingRoom</div>
+    <GameContainer>FillingRoom</GameContainer>
   )
 }
