@@ -1,11 +1,11 @@
-import { FC, useEffect, useState } from 'react'
+import {  useEffect, useState } from 'react'
 
 import { shapes } from '@/assets/figures'
 import { GameContainer } from '@/styles'
 
 import { MoveFigure } from './styles'
 
-export const GeometricFigMove: FC = () => {
+export const GeometricFigMove = () => {
   const [activeId, setActiveId] = useState(0)
 
   useEffect(() => {

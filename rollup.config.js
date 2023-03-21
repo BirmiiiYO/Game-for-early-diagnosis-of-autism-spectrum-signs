@@ -7,6 +7,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import image from '@rollup/plugin-image';
 import svgr from '@svgr/rollup'
 import alias from '@rollup/plugin-alias'
+import typescript from '@rollup/plugin-typescript';
 
 const projectRootDir = path.resolve(__dirname)
 
@@ -20,6 +21,7 @@ export default {
   },
   plugins: [
     image(),
+    typescript(),
     svgr(),
     babel({
       exclude: 'node_modules/**',
