@@ -2,34 +2,36 @@ import styled, { keyframes } from "styled-components";
 
 import { Figure } from "@/styles";
 
+import { IGeometricFigMoveProps } from "./types";
+
 const moveSquare = keyframes`
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    transform: translate(-1000%, -50%);
-  }
+0% {
+  transform: translate(0,0);
+}
+100% {
+  transform: translate(-90vw, -60vh);
+}
 `;
 
 const moveCircle = keyframes`
   0% {
-    transform: translate(-50%, -50%);
+    transform: translate(0,0);
   }
   100% {
-    transform: translate(-10%, -990%);
+    transform: translate(90vw, -60vh);
   }
 `;
 
 const moveTriangle = keyframes`
   0% {
-    transform: translate(-50%, -50%);
+    transform: translate(0, 0);
   }
   100% {
-    transform: translate(500%, 30%);
+    transform: translate(90vw, 60vh);
   }
 `;
 
-export const MoveFigure = styled(Figure)`
+export const MoveFigure = styled(Figure)<IGeometricFigMoveProps>`
 animation-name: ${({animationFigure})=> {
   switch(animationFigure) {
       case 'circle':
@@ -38,6 +40,6 @@ animation-name: ${({animationFigure})=> {
           return moveSquare
       case 'triangle':
           return moveTriangle
-  }
+  }  
 }};
 `

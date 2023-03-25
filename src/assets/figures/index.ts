@@ -1,13 +1,24 @@
 
 
+import { css } from 'styled-components';
+
 import { IShapes } from '@/types/Shape';
 
-import blueCircle from './blueCircle.png';
-import greenSquare from './greenSquare.png';
-import redTriangle from './redTriangle.png';
+import blueSquare from './blueSquare.png';
+import redCircle from './redCircle.png';
+import yellowTriangle from './yellowTriangle.png';
 
 export const shapes: IShapes[] = [
-    { id: 0, image: blueCircle as string, figure: 'circle' },
-    { id: 1, image: greenSquare as string, figure: 'square'},
-    { id: 2, image: redTriangle as string, figure: 'triangle' },
+    { id: 0, image: redCircle as string, figure: 'circle', position: css`
+    left:5px;
+    top:5px;
+    ` },
+    { id: 1, image: blueSquare as string, figure: 'square', position: css`
+    right:5px;
+    top:5px;
+    ` },
+    { id: 2, image: yellowTriangle as string, figure: 'triangle', position: css`
+    bottom:5px;
+    left:5px;
+    `  },
   ];
