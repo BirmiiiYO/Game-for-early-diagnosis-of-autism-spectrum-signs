@@ -68,7 +68,7 @@ const fadeSquare = keyframes`
 `;
 
 export const FadeFigure = styled(Figure)<IFigureStyle>`
-animation: ${({animationFigure})=> {
+animation-name: ${({animationFigure})=> {
   switch(animationFigure) {
       case 'circle':
           return fadeCircle
@@ -77,5 +77,5 @@ animation: ${({animationFigure})=> {
       case 'triangle':
           return fadeTriangle
   }  
-}} ${({speed})=>speed}s ease-in-out infinite;
+}};
 `
