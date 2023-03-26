@@ -6,8 +6,8 @@ export default {
   component: CrumblingBalls,
 } as ComponentMeta<typeof CrumblingBalls>
 
-const GeometricFigMoveStory: ComponentStory<typeof CrumblingBalls> = () => (
-  <CrumblingBalls/>
+const GeometricFigMoveStory: ComponentStory<typeof CrumblingBalls> = args => (
+  <CrumblingBalls {...args}/>
 )
 
 

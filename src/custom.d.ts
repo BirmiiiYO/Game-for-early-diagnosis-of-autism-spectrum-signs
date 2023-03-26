@@ -1,5 +1,6 @@
 declare module '*.png'
 declare module '*.jpg'
+declare module '*.gif'
 declare module '*.webp'
 declare module '*.svg' {
     import * as React from 'react';

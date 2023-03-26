@@ -2,8 +2,9 @@
 import Circle from 'assets/figures/redCircle.png'
 import React, { useEffect, useState } from 'react'
 
-import { GameContainer } from '@/styles'
-import { IFigureStyle } from '@/types/Shape'
+import { GameContainer } from './../../styles'
+import { IFigureStyle } from './../../types/Shape';
+
 
 import { getRandomNumber} from './helpers'
 import { Ball, Figure } from './styles'

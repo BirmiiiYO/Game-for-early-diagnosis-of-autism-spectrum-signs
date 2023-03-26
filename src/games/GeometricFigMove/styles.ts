@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 
-import { Figure } from '@/styles'
+import { Figure } from './../../styles'
 
 import { IGeometricFigMoveProps } from './types'
 

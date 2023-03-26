@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { IFigureStyle } from '@/types/Shape'
+import { IFigureStyle } from './../types/Shape'
 
 export const GameContainer = styled.div`
   border: 2px solid black;

@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import React, { useEffect, useState } from 'react'
 
-import { shapes } from '@/assets/figures'
-import { GameContainer } from '@/styles'
+import { shapes } from './../../assets/figures'
+import { GameContainer } from './../../styles'
 
 import { IGeometricFigMoveProps } from '../GeometricFigMove/types'
 import { FadeFigure } from './styles'

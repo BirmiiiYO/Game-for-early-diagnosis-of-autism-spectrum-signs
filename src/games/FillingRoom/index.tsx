@@ -1,8 +1,8 @@
-import React, { useEffect,  useState } from 'react'
+import { useEffect,  useState } from 'react'
 
-import { furnitures } from '@/assets/furnitures'
-import { GameContainer } from '@/styles'
-import { IFigureStyle } from '@/types/Shape'
+import { furnitures } from './../../assets/furnitures'
+import { GameContainer } from './../../styles'
+import { IFigureStyle } from './../../types/Shape'
 
 import { Furniture } from './styles'
 

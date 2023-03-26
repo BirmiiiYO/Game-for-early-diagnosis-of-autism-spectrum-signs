@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { shapes } from '@/assets/figures'
-import { GameContainer } from '@/styles'
+import { shapes } from './../../assets/figures'
+import { GameContainer } from './../../styles'
 
 import { MoveFigure } from './styles'
 import { IGeometricFigMoveProps } from './types'
