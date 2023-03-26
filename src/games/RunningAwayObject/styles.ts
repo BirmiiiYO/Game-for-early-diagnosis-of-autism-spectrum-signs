@@ -2,23 +2,15 @@ import styled, { keyframes } from 'styled-components'
 
 const moving = keyframes`
   0% {
-    transform: rotate(100deg);
+    left: 0%;
 }
-  50% {
-    transform: rotate(30deg);
-  }
   100% {
-    transform: rotate(60deg);
+    left: 100%;
   }
 `
 
-export const Object = styled.img`
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-name: ${moving};
-  animation-timing-function: ease-in-out;
-  position: absolute;
-  transform: rotate(30deg);
-  width: 100px;
+export const Batterfly = styled.img`
+animation: ${moving} 10s forwards;
+animation-iteration-count: 1;
+position: absolute;
 `

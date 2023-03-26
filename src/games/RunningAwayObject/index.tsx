@@ -1,15 +1,14 @@
-import Lizard from 'assets/figures/lizard.png'
-import React from 'react'
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import batterfly from 'assets/gifs/batterfly.gif'
 
 import { GameContainer } from '@/styles'
 
-import { Object } from './styles'
+import { Batterfly } from './styles'
 
 export const RunningAwayObject = () => {
   return (
     <GameContainer>
-      {/* <Object src={Lizard} alt='lizard'/> */}
-      <h1>lizard</h1>
+      <Batterfly src={batterfly} alt='batterfly' />
     </GameContainer>
   )
 }
