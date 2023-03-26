@@ -35,12 +35,12 @@ const fadeCircle = keyframes`
 }
 60% {
   opacity: 0;
-  bottom: 5px;
+  top: 82%;
   left: 5px;
 }
 100% {
   opacity: 1;
-  bottom: 5px;
+  top: 82%;
   left: 5px;
 }
 `
@@ -56,13 +56,13 @@ const fadeSquare = keyframes`
 }
 60% {
   opacity: 0;
-  top: 5px;
-  right: 5px;
+  top: 2%;
+  left: 86%;
 }
 100% {
   opacity: 1;
-  top: 5px;
-  right: 5px;
+  top: 2%;
+  left: 86%;
 }
 `
 
