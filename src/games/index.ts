@@ -1,4 +1,3 @@
-import { StaticFace } from './StaticFace';
 import { RunningAwayObject } from 'games/RunningAwayObject';
 import { GeometricFigMove } from './GeometricFigMove';
 import { GeometricFigFade } from './GeometricFigFade';
@@ -9,4 +8,4 @@ import { Emotions } from "./Emotions";
 import { MovingEyes } from "./MovingEyes";
 import { VideoSequence } from "./VideoSequence";
 
-export { StaticFace, CrumblingBalls, FadeFace, FillingRoom, GeometricFigFade, GeometricFigMove, RunningAwayObject, Emotions, MovingEyes, VideoSequence}
+export {  CrumblingBalls, FadeFace, FillingRoom, GeometricFigFade, GeometricFigMove, RunningAwayObject, Emotions, MovingEyes, VideoSequence}

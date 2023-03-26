@@ -18,7 +18,7 @@ export const GeometricFigMove = ({
         : setActiveId(activeId + 1)
     }, (speed * 1000) / 2)
     return () => clearInterval(shapeInterval)
-  }, [activeId])
+  }, [activeId, speed])
 
   return (
     <GameContainer>
