@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reactToWebComponent from "react-to-webcomponent";
-import { FillingRoom,CrumblingBalls,FadeFace,GeometricFigFade,GeometricFigMove,RunningAwayObject,StaticFace } from './games';
+import { FillingRoom,CrumblingBalls,FadeFace,GeometricFigFade,GeometricFigMove,RunningAwayObject,StaticFace, Emotions, MovingEyes, VideoSequence } from './games';
 
 customElements.define("filling-room", reactToWebComponent(FillingRoom, React as any,  ReactDOM as any));
 
@@ -16,4 +16,10 @@ customElements.define("geometric-fig-move", reactToWebComponent(GeometricFigMove
 customElements.define("running-away-object", reactToWebComponent(RunningAwayObject, React as any,  ReactDOM as any));
 
 customElements.define("static-face", reactToWebComponent(StaticFace, React as any,  ReactDOM as any));
+
+customElements.define("emotions", reactToWebComponent(Emotions, React as any,  ReactDOM as any));
+
+customElements.define("moving-eyes", reactToWebComponent(MovingEyes, React as any,  ReactDOM as any));
+
+customElements.define("video-sequence", reactToWebComponent(VideoSequence, React as any,  ReactDOM as any));
 

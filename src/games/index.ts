@@ -5,5 +5,8 @@ import { GeometricFigFade } from './GeometricFigFade';
 import { FadeFace } from './FadeFace';
 import { CrumblingBalls } from './CrumblingBalls';
 import { FillingRoom } from "./FillingRoom";
+import { Emotions } from "./Emotions";
+import { MovingEyes } from "./MovingEyes";
+import { VideoSequence } from "./VideoSequence";
 
-export {StaticFace,CrumblingBalls,FadeFace,FillingRoom,GeometricFigFade,GeometricFigMove, RunningAwayObject}
+export { StaticFace, CrumblingBalls, FadeFace, FillingRoom, GeometricFigFade, GeometricFigMove, RunningAwayObject, Emotions, MovingEyes, VideoSequence}
