@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import movingEyes from 'assets/gifs/movingEyes.gif'
+import movingEyes from '../../assets/gifs/movingEyes.gif'
 
 import { GameContainer } from './../../styles'
 
