@@ -19,7 +19,7 @@ export const GeometricFigFade = ({
         : setActiveId(activeId + 1)
     }, speed * 1000)
     return () => clearInterval(shapeInterval)
-  }, [activeId])
+  }, [activeId, speed])
 
   return (
     <GameContainer>

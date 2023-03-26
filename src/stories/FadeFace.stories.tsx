@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
-import { FadeFace } from 'games/FadeFace'
+import { FadeFace } from './../games/FadeFace'
 
 export default {
   title: 'Fade Face',

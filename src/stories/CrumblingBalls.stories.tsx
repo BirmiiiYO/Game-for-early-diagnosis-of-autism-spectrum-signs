@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { CrumblingBalls } from 'games/CrumblingBalls'
+import { CrumblingBalls } from './../games/CrumblingBalls'
 
 export default {
   title: 'Crumbling balls',

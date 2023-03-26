@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { FillingRoom } from 'games/FillingRoom'
+import { FillingRoom } from './../games/FillingRoom'
 
 export default {
   title: 'Filling room',

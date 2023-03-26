@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { StaticFace } from 'games/StaticFace'
+import { StaticFace } from './../games/StaticFace'
 
 export default {
   title: 'Static face',

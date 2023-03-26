@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { GeometricFigMove } from 'games/GeometricFigMove'
+import { GeometricFigMove } from './../games/GeometricFigMove'
 
 export default {
   title: 'Geometric figures move',

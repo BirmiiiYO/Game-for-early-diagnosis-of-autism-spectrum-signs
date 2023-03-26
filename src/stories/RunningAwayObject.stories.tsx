@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { RunningAwayObject } from 'games/RunningAwayObject'
+import { RunningAwayObject } from './../games/RunningAwayObject'
 
 export default {
   title: 'Running away object',

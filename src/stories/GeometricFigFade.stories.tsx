@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { GeometricFigFade } from 'games/GeometricFigFade'
+import { GeometricFigFade } from './../games/GeometricFigFade'
 
 export default {
   title: 'Geometric figures fade',

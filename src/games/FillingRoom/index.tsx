@@ -23,7 +23,7 @@ export const FillingRoom = ({speed = 1}: IFigureStyle) => {
       setCounter(prevCounter => prevCounter + 1)
     }, speed * 1000);
     return () => clearInterval(timer);
-  }, [visible]);
+  }, [counter, speed, visible]);
   return (
     <GameContainer>
       {furnitures.map(({element,id,image ,position}) => 

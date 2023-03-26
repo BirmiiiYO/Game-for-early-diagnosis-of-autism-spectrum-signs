@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import batterfly from 'assets/gifs/batterfly.gif'
+import butterfly from '../../assets/gifs/butterfly.gif'
 
 import { GameContainer } from './../../styles'
 
-import { Batterfly } from './styles'
+import {  Butterfly } from './styles'
 
 export const RunningAwayObject = () => {
   return (
     <GameContainer>
-      <Batterfly src={batterfly} alt='batterfly' />
+      <Butterfly src={butterfly} alt='butterfly' />
     </GameContainer>
   )
 }
