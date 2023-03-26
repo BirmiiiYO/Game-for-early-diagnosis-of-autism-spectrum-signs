@@ -1,3 +1,3 @@
-export const  getRandomNumber = () => {
-    return Math.floor(Math.random() * 91) + 5;
-  }
+export const getRandomNumber = () => {
+  return Math.floor(Math.random() * 91) + 5
+}

@@ -9,26 +9,20 @@ import { getRandomNumber} from './helpers'
 import { Ball, Figure } from './styles'
 
 export const CrumblingBalls = ({speed = 10}: IFigureStyle) => {
-  const [balls, setBalls] = useState<Array<{x: number, y:number}>>([])
-console.log(balls);
-
+  const [ball, setBall] = useState<{x: number, y:number}>({x: 0, y: 0})
   useEffect(() => {
       const timer = setInterval(() => {
-        setBalls(() => {
-          const newBalls = [];
-          for (let i = 0; i < 5; i++) {
+        setBall(() => {
             const x = getRandomNumber();
             const y = getRandomNumber();
-            newBalls.push({ x, y });
-          }
-          return [ ...newBalls];
+          return {x,y};
         });
-      }, speed*1000 /2);
+      }, speed * 1000 /4);
       return () => clearInterval(timer);
-    }, [balls]);
+    }, [ball]);
   return (
     <GameContainer><Figure speed={speed} src={Circle as string}/>
-    {balls.map(({x,y}) => <Ball speed={speed} x={x} y={y}/>)}
+    <Ball speed={speed} x={ball.x} y={ball.y}/>
     </GameContainer>
   )
 }

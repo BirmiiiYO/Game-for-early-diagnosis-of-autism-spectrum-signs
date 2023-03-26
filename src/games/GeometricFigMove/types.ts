@@ -1,3 +1,3 @@
 export interface IGeometricFigMoveProps {
-    speed?: number;
+  speed?: number;
 }

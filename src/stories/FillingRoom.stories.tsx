@@ -6,8 +6,8 @@ export default {
   component: FillingRoom,
 } as ComponentMeta<typeof FillingRoom>
 
-const GeometricFigMoveStory: ComponentStory<typeof FillingRoom> = () => (
-  <FillingRoom/>
+const GeometricFigMoveStory: ComponentStory<typeof FillingRoom> = args => (
+  <FillingRoom {...args}/>
 )
 
 

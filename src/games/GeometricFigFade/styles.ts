@@ -1,8 +1,7 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components'
 
-import { Figure } from "@/styles";
-import { IFigureStyle } from "@/types/Shape";
-
+import { Figure } from '@/styles'
+import { IFigureStyle } from '@/types/Shape'
 
 const fadeTriangle = keyframes`
 0% {
@@ -23,7 +22,7 @@ const fadeTriangle = keyframes`
   top: 5px;
   left: 5px;
 }
-`;
+`
 
 const fadeCircle = keyframes`
 0% {
@@ -44,7 +43,7 @@ const fadeCircle = keyframes`
   bottom: 5px;
   left: 5px;
 }
-`;
+`
 
 const fadeSquare = keyframes`
 0% {
@@ -65,17 +64,20 @@ const fadeSquare = keyframes`
   top: 5px;
   right: 5px;
 }
-`;
+`
 
-export const FadeFigure = styled(Figure)<IFigureStyle>`
-animation-name: ${({animationFigure})=> {
-  switch(animationFigure) {
+export const FadeFigure =
+  styled(Figure) <
+  IFigureStyle >
+  `
+animation-name: ${({ animationFigure }) => {
+    switch (animationFigure) {
       case 'circle':
-          return fadeCircle
+        return fadeCircle
       case 'square':
-          return fadeSquare
+        return fadeSquare
       case 'triangle':
-          return fadeTriangle
-  }  
-}};
+        return fadeTriangle
+    }
+  }};
 `

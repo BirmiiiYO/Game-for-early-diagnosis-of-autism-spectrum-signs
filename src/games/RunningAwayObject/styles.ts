@@ -1,4 +1,4 @@
-import  styled, { keyframes }  from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 
 const moving = keyframes`
   0% {
@@ -10,15 +10,15 @@ const moving = keyframes`
   100% {
     transform: rotate(60deg);
   }
-`;
+`
 
 export const Object = styled.img`
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: ${moving};
-    animation-timing-function: ease-in-out;
-    position: absolute;
-    transform: rotate(30deg);
-    width: 100px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: ${moving};
+  animation-timing-function: ease-in-out;
+  position: absolute;
+  transform: rotate(30deg);
+  width: 100px;
 `
