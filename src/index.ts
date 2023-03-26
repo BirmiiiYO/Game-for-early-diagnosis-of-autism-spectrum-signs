@@ -4,6 +4,7 @@ import { FillingRoom } from '@/games/FillingRoom/index'
 import { GeometricFigFade } from '@/games/GeometricFigFade/index'
 import { GeometricFigMove } from '@/games/GeometricFigMove/index'
 import { MovingEyes } from '@/games/MovingEyes/index'
+import { VideoSequence } from '@/games/VideoSequence/index'
 
 export { 
   Emotions,
@@ -11,5 +12,6 @@ export {
   FillingRoom,
   GeometricFigFade,
   GeometricFigMove,
-  MovingEyes
+  MovingEyes,
+  VideoSequence
 }
