@@ -15,7 +15,7 @@ customElements.define("geometric-fig-move", reactToWebComponent(GeometricFigMove
 
 customElements.define("running-away-object", reactToWebComponent(RunningAwayObject, React as any,  ReactDOM as any));
 
-customElements.define("emotions", reactToWebComponent(Emotions, React as any,  ReactDOM as any));
+customElements.define("emotions-rtc", reactToWebComponent(Emotions, React as any,  ReactDOM as any));
 
 customElements.define("moving-eyes", reactToWebComponent(MovingEyes, React as any,  ReactDOM as any));
 

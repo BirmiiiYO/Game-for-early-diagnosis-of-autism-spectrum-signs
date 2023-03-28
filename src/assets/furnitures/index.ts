@@ -2,7 +2,7 @@ import { css, FlattenSimpleInterpolation } from 'styled-components';
 
 import { IShapes } from '../../types/Shape';
 
-import man from '../man.png';
+import man from './man.png';
 import cabinet from './cabinet.png';
 import chair from './chair.png';
 import lamp from './lamp.png';
