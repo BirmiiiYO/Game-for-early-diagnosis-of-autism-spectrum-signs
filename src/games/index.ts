@@ -1,4 +1,4 @@
-import { RunningAwayObject } from 'games/RunningAwayObject';
+import { RunningAwayObject } from './RunningAwayObject';
 import { GeometricFigMove } from './GeometricFigMove';
 import { GeometricFigFade } from './GeometricFigFade';
 import { FadeFace } from './FadeFace';
