@@ -1,4 +1,4 @@
-import { IShapes } from '../../types/Shape';
+import { IShapes } from '@/types/Shape';
 
 import blueSquare from './blueSquare.png';
 import redCircle from './redCircle.png';
