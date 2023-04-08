@@ -7,10 +7,7 @@ export default {
   component: Emotions,
 } as ComponentMeta<typeof Emotions>
 
-const EmotionsStory: ComponentStory<typeof Emotions> = () => (
-  <Emotions/>
-)
-
+const EmotionsStory: ComponentStory<typeof Emotions> = () => <Emotions />
 
 export const game = EmotionsStory.bind({})
 game.args = {}

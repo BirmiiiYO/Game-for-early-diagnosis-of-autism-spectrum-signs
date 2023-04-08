@@ -9,8 +9,8 @@ export const MovingEyes = () => {
   return (
     <GameContainer>
       <GifBlock>
-   <MovingEyesImage src={movingEyes} alt='faceEyes' />
-    </GifBlock>
+        <MovingEyesImage src={movingEyes} alt="faceEyes" />
+      </GifBlock>
     </GameContainer>
   )
 }

@@ -7,9 +7,8 @@ export default {
 } as ComponentMeta<typeof FillingRoom>
 
 const GeometricFigMoveStory: ComponentStory<typeof FillingRoom> = args => (
-  <FillingRoom {...args}/>
+  <FillingRoom {...args} />
 )
-
 
 export const game = GeometricFigMoveStory.bind({})
 game.args = {}

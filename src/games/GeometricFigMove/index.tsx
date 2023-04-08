@@ -6,9 +6,7 @@ import { GameContainer } from './../../styles'
 import { MoveFigure } from './styles'
 import { IGeometricFigMoveProps } from './types'
 
-export const GeometricFigMove = ({
-  speed = 5,
-}: IGeometricFigMoveProps) => {
+export const GeometricFigMove = ({ speed = 5 }: IGeometricFigMoveProps) => {
   const [activeId, setActiveId] = useState(0)
 
   useEffect(() => {

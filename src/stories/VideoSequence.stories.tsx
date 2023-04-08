@@ -8,9 +8,8 @@ export default {
 } as ComponentMeta<typeof VideoSequence>
 
 const VideoSequenceStory: ComponentStory<typeof VideoSequence> = () => (
-  <VideoSequence/>
+  <VideoSequence />
 )
-
 
 export const game = VideoSequenceStory.bind({})
 game.args = {}

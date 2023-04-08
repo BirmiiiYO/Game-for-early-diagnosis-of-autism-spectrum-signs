@@ -7,9 +7,8 @@ export default {
 } as ComponentMeta<typeof CrumblingBalls>
 
 const GeometricFigMoveStory: ComponentStory<typeof CrumblingBalls> = args => (
-  <CrumblingBalls {...args}/>
+  <CrumblingBalls {...args} />
 )
-
 
 export const game = GeometricFigMoveStory.bind({})
 game.args = {}

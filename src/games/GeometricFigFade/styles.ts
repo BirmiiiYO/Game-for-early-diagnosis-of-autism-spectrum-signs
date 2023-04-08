@@ -66,11 +66,8 @@ const fadeSquare = keyframes`
 }
 `
 
-export const FadeFigure =
-  styled(Figure) <
-  IFigureStyle >
-  `
-animation-name: ${({ animationFigure }) => {
+export const FadeFigure = styled(Figure)<IFigureStyle>`
+  animation-name: ${({ animationFigure }) => {
     switch (animationFigure) {
       case 'circle':
         return fadeCircle

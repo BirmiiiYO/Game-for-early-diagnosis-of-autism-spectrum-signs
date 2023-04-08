@@ -7,9 +7,8 @@ export default {
 } as ComponentMeta<typeof GeometricFigFade>
 
 const GeometricFigMoveStory: ComponentStory<typeof GeometricFigFade> = () => (
-  <GeometricFigFade/>
+  <GeometricFigFade />
 )
-
 
 export const game = GeometricFigMoveStory.bind({})
 game.args = {}

@@ -7,9 +7,7 @@ import { GameContainer } from './../../styles'
 import { IGeometricFigMoveProps } from '../GeometricFigMove/types'
 import { FadeFigure } from './styles'
 
-export const GeometricFigFade = ({
-  speed = 5,
-}: IGeometricFigMoveProps) => {
+export const GeometricFigFade = ({ speed = 5 }: IGeometricFigMoveProps) => {
   const [activeId, setActiveId] = useState(0)
 
   useEffect(() => {

@@ -7,10 +7,7 @@ export default {
   component: FadeFace,
 } as ComponentMeta<typeof FadeFace>
 
-const FadeFaceStory: ComponentStory<typeof FadeFace> = () => (
-  <FadeFace/>
-)
-
+const FadeFaceStory: ComponentStory<typeof FadeFace> = () => <FadeFace />
 
 export const game = FadeFaceStory.bind({})
 game.args = {}

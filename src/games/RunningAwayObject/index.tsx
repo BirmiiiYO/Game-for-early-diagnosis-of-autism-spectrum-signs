@@ -3,12 +3,12 @@ import butterfly from '../../assets/gifs/butterfly.gif'
 
 import { GameContainer } from './../../styles'
 
-import {  Butterfly } from './styles'
+import { Butterfly } from './styles'
 
 export const RunningAwayObject = () => {
   return (
     <GameContainer>
-      <Butterfly src={butterfly} alt='butterfly' />
+      <Butterfly src={butterfly} alt="butterfly" />
     </GameContainer>
   )
 }

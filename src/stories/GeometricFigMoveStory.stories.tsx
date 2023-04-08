@@ -7,9 +7,8 @@ export default {
 } as ComponentMeta<typeof GeometricFigMove>
 
 const GeometricFigMoveStory: ComponentStory<typeof GeometricFigMove> = () => (
-  <GeometricFigMove/>
+  <GeometricFigMove />
 )
-
 
 export const game = GeometricFigMoveStory.bind({})
 game.args = {}
