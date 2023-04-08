@@ -10,11 +10,11 @@ const fadeFace = keyframes`
 }
 `
 
-export const Image = styled.img`
-  animation: ${fadeFace} infinite 4s;
+export const Image = styled.img<{ speed: number }>`
+  animation: ${fadeFace} infinite ${({ speed }) => speed}s;
   animation-direction: alternate;
-  height: 200px;
-  margin-left: 40%;
-  margin-top: 5%;
-  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  max-width: 600px;
 `
