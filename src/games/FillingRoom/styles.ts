@@ -4,9 +4,12 @@ import styled, {
 
 export const Furniture =
   styled.img <
-  { position: FlattenSimpleInterpolation } >
+  { styles: FlattenSimpleInterpolation } >
   `
 position: absolute;
-width: 20%;
-${({ position }) => position}
+${({ styles }) => styles}
+@media (max-width: 768px) {
+  flex-direction: column;
+  max-height:150px;
+}
 `
