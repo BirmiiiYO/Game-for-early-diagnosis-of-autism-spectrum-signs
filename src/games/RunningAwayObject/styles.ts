@@ -9,8 +9,8 @@ const moving = keyframes`
   }
 `
 
-export const Butterfly = styled.img`
-  animation: ${moving} 10s forwards;
+export const Butterfly = styled.img< { speed: number }>`
+  animation: ${moving} ${({speed}) => speed}s forwards;
   animation-iteration-count: 1;
   position: absolute;
 `

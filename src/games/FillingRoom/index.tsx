@@ -5,7 +5,7 @@ import { GameContainer } from './../../styles'
 
 import { Furniture } from './styles'
 
-export const FillingRoom = ({ speed = 1 }: { speed: number }) => {
+export const FillingRoom = ({ speed = 1 }: { speed?: number }) => {
   const [visible, setVisible] = useState<string[]>([])
   const [counter, setCounter] = useState(0)
 
