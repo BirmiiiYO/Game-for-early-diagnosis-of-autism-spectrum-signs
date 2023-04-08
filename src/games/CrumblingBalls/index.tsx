@@ -1,15 +1,19 @@
-/* eslint-disable react/jsx-key */
-import Circle from './../../assets/figures/redCircle.png'
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 
 import { GameContainer } from './../../styles'
-import { IFigureStyle } from './../../types/Shape';
+import { ICrumblingBallsProps } from './types';
 
 
 import { getRandomNumber} from './helpers'
 import { Ball, Figure } from './styles'
 
-export const CrumblingBalls = ({speed = 10}: IFigureStyle) => {
+export const CrumblingBalls = ({
+  speed = 10,
+  mainBallColor = 'orange',
+  smallBallColor = 'green',
+  mainBallSize = 100,
+  smallBallSize = 50,
+}:ICrumblingBallsProps ) => {
   const [ball, setBall] = useState<{x: number, y:number}>({x: 0, y: 0})
   useEffect(() => {
       const timer = setInterval(() => {
@@ -22,8 +26,9 @@ export const CrumblingBalls = ({speed = 10}: IFigureStyle) => {
       return () => clearInterval(timer);
     }, [ball, speed]);
   return (
-    <GameContainer><Figure speed={speed} src={Circle as string}/>
-    <Ball speed={speed} x={ball.x} y={ball.y}/>
+    <GameContainer><Figure size={mainBallSize}
+    speed={speed} mainColor={mainBallColor}/>
+    <Ball speed={speed} x={ball.x} y={ball.y} color={smallBallColor} size={smallBallSize}/>
     </GameContainer>
   )
 }

@@ -1,5 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 
+import {IMainBallStyle,ISmallBallStyle} from './types'
+
 const appear = keyframes`
   0% {
     opacity: 0;
@@ -27,17 +29,17 @@ const explode = keyframes`
 `
 
 export const Ball =
-  styled.div <
-  { speed: number, x: number, y: number } >
+  styled.div <ISmallBallStyle>
   `
 animation-duration: ${({ speed }) => speed / 2}s;
 animation-fill-mode: forwards;
 animation-iteration-count: infinite;
 animation-name:  ${explode};
 animation-timing-function: ease-out;
-background-color: red;
+background-color: ${({color}) => color};
 border-radius: 50%;
-height: 50px;
+width: ${({size})=> size}px; 
+height: ${({size})=> size}px;
 left: ${({ y }) => y}%;
 opacity: 0;
 position: absolute;
@@ -46,16 +48,16 @@ width: 50px;
 `
 
 export const Figure =
-  styled.img <
-  { speed: number } >
-  `
+  styled.div<IMainBallStyle>`
     animation-duration: ${({ speed }) => speed}s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-name: ${appear};
-    height:100px;
+    width: ${({size})=> size}px; 
+    height: ${({size})=> size}px;
+    background: ${({mainColor})=> mainColor};
+    border-radius: 50%;
     left: calc(50% - 100px);
     position:absolute;
     top: calc(50% - 50px);
-    width:100px;
 `
