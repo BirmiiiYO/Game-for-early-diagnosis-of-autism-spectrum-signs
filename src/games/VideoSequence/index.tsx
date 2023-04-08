@@ -8,7 +8,7 @@ export const VideoSequence = () => {
 
   return (
     <GameContainer>
-      <VideoSeq src={video} autoPlay />
+      <VideoSeq src={video} autoPlay loop/>
     </GameContainer>
   )
 }
