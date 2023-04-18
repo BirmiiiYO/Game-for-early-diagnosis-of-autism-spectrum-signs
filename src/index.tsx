@@ -11,6 +11,7 @@ import {
   Emotions,
   MovingEyes,
   VideoSequence,
+  Starship
 } from './games'
 
 customElements.define(
@@ -56,4 +57,9 @@ customElements.define(
 customElements.define(
   'video-sequence',
   reactToWebComponent(VideoSequence, React as any, ReactDOM as any),
+)
+
+customElements.define(
+  'starship-game',
+  reactToWebComponent(Starship, React as any, ReactDOM as any),
 )

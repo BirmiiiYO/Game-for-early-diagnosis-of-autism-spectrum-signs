@@ -20,7 +20,7 @@ export const GeometricFigMove = ({ speed = 5 }: IGeometricFigMoveProps) => {
 
   return (
     <GameContainer>
-      {shapes.map(({ id, image, figure }) => (
+      {/* {shapes.map(({ id, image, figure }) => (
         <MoveFigure
           key={id}
           src={image}
@@ -28,7 +28,7 @@ export const GeometricFigMove = ({ speed = 5 }: IGeometricFigMoveProps) => {
           active={activeId === id}
           animationFigure={figure}
         />
-      ))}
+      ))} */}test
     </GameContainer>
   )
 }
