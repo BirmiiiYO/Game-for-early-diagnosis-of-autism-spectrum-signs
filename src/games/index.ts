@@ -7,7 +7,7 @@ import { FillingRoom } from './FillingRoom'
 import { Emotions } from './Emotions'
 import { MovingEyes } from './MovingEyes'
 import { VideoSequence } from './VideoSequence'
-import { Starship } from './Starship'
+
 export {
   CrumblingBalls,
   FadeFace,
@@ -18,5 +18,4 @@ export {
   Emotions,
   MovingEyes,
   VideoSequence,
-  Starship
 }

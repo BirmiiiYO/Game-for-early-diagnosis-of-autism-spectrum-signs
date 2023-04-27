@@ -318,6 +318,7 @@ function SfxrParams() {
 			  _envelopeLength = _envelopeLength1;
 			  break;
 			case 2:
+			default:
 			  _envelopeLength = _envelopeLength2;
 		  }
 		}
@@ -334,6 +335,7 @@ function SfxrParams() {
 			_envelopeVolume = 1 - _envelopeTime * _envelopeOverLength2;
 			break;
 		  case 3:
+			default:
 			_envelopeVolume = 0;
 			_finished = true;
 		}
@@ -1351,7 +1353,7 @@ function gameloop()
 	if (l.paused)
 		return;
 
-	if (--ship.reload <= 0 && keys[88])
+	if (--ship.reload <= 0)
 	{
 		// Weapon 0 and 1 fire in the same direction, but the later is a bit faster
 		ship.reload = ship.weapon ? 4 : 6;
