@@ -31,8 +31,11 @@ const moveTriangle = keyframes`
   }
 `
 
-export const MoveFigure = styled(Figure)<IGeometricFigMoveProps>`
-  animation-name: ${({ animationFigure }) => {
+export const MoveFigure =
+  styled(Figure) <
+  IGeometricFigMoveProps >
+  `
+animation-name: ${({ animationFigure }) => {
     switch (animationFigure) {
       case 'circle':
         return moveCircle
