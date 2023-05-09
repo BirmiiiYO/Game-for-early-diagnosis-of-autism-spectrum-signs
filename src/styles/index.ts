@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import { IFigureStyle } from './../types/Shape'
 
 export const GameContainer = styled.div`
-  border: 2px solid black;
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
   position: relative;
   width: 100%;

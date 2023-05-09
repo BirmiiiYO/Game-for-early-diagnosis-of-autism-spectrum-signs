@@ -29,7 +29,7 @@ const explode = keyframes`
 `
 
 export const Ball = styled.div<ISmallBallStyle>`
-  animation-duration: ${({ speed }) => speed / 2}s;
+  animation-duration: ${({ speed }) => speed}s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-name: ${explode};

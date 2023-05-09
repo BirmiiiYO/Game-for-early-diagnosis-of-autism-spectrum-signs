@@ -484,8 +484,8 @@ var interval;
 
 var l = {
 	// Currently a lot of objects and speeds don't scale well with the size of the canvas
-	WIDTH: 500,
-	HEIGHT: 500,
+	WIDTH: 1625,
+	HEIGHT: 800,
 	// Scrolling speed for the background
 	SPEED: 1,
 	// Number of ticks for the screen flash effect
@@ -1260,8 +1260,7 @@ c.height = l.HEIGHT;
 var a = c.getContext('2d');
 a.fillStyle = '#000';
 a.fillRect(0, 0, c.width, c.height);
-spawnText('LOADING', -1);
-spawnText('SORADES 13K', 6 * 30);
+spawnText('Загрузка', -1);
 
 // Debug only
 /*
@@ -1631,7 +1630,7 @@ function gameloop()
 		spawnEnemy(1, -1.5 * l.HEIGHT);
 		spawnEnemy(2, -1 * l.HEIGHT);
 		spawnEnemy(3, -2.25 * l.HEIGHT);
-		spawnText('WAVE ' + l.level);
+		spawnText('Волна ' + l.level);
 		l.bomb = l.MAX_BOMB;
 		play(8);
 	}

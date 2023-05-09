@@ -7,10 +7,10 @@ import { getRandomNumber } from './helpers'
 import { Ball, Figure } from './styles'
 
 export const CrumblingBalls = ({
-  speed = 10,
+  speed = 3,
   mainBallColor = 'orange',
   smallBallColor = 'green',
-  mainBallSize = 100,
+  mainBallSize = 200,
   smallBallSize = 50,
 }: ICrumblingBallsProps) => {
   const [ball, setBall] = useState<{ x: number; y: number }>({ x: 0, y: 0 })
@@ -21,7 +21,7 @@ export const CrumblingBalls = ({
         const y = getRandomNumber()
         return { x, y }
       })
-    }, (speed * 1000) / 4)
+    }, (speed * 1000))
     return () => clearInterval(timer)
   }, [ball, speed])
   return (
@@ -30,7 +30,8 @@ export const CrumblingBalls = ({
       <Ball
         speed={speed}
         x={ball.x}
-        y={ball.y}
+        y=
+        {ball.y}
         color={smallBallColor}
         size={smallBallSize}
       />

@@ -1,0 +1,11 @@
+{
+  "name": "SkiEr game",
+  "version": "0.0.1",
+  "author": "BirmiiiYo",
+  "description": "A browser-based game",
+  "devDependencies": {
+    "sugar": "1.3.x",
+    "mocha": "1.8.x",
+    "should": "1.2.x"
+  }
+}

@@ -15,46 +15,46 @@ import {
 
 customElements.define(
   'filling-room',
-  reactToWebComponent(FillingRoom, React as any, ReactDOM as any),
+  reactToWebComponent(FillingRoom, React, ReactDOM),
 )
 
 customElements.define(
   'crumbling-balls',
-  reactToWebComponent(CrumblingBalls, React as any, ReactDOM as any),
+  reactToWebComponent(CrumblingBalls, React, ReactDOM),
 )
 
 customElements.define(
   'fade-face',
-  reactToWebComponent(FadeFace, React as any, ReactDOM as any),
+  reactToWebComponent(FadeFace, React, ReactDOM),
 )
 
 customElements.define(
   'geometric-fig-fade',
-  reactToWebComponent(GeometricFigFade, React as any, ReactDOM as any),
+  reactToWebComponent(GeometricFigFade, React, ReactDOM),
 )
 
 customElements.define(
   'geometric-fig-move',
-  reactToWebComponent(GeometricFigMove, React as any, ReactDOM as any),
+  reactToWebComponent(GeometricFigMove, React, ReactDOM),
 )
 
 customElements.define(
   'running-away-object',
-  reactToWebComponent(RunningAwayObject, React as any, ReactDOM as any),
+  reactToWebComponent(RunningAwayObject, React, ReactDOM),
 )
 
 customElements.define(
   'emotions-rtc',
-  reactToWebComponent(Emotions, React as any, ReactDOM as any),
+  reactToWebComponent(Emotions, React, ReactDOM),
 )
 
 customElements.define(
   'moving-eyes',
-  reactToWebComponent(MovingEyes, React as any, ReactDOM as any),
+  reactToWebComponent(MovingEyes, React, ReactDOM),
 )
 
 customElements.define(
   'video-sequence',
-  reactToWebComponent(VideoSequence, React as any, ReactDOM as any),
+  reactToWebComponent(VideoSequence, React, ReactDOM),
 )
 
