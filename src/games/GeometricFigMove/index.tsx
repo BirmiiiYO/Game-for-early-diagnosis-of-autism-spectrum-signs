@@ -6,9 +6,7 @@ import { GameContainer } from './../../styles'
 import { MoveFigure } from './styles'
 import { IGeometricFigMoveProps } from './types'
 
-export const GeometricFigMove = ({
-  speed = 5,
-}: IGeometricFigMoveProps) => {
+export const GeometricFigMove = ({ speed = 5 }: IGeometricFigMoveProps) => {
   const [activeId, setActiveId] = useState(0)
 
   useEffect(() => {
@@ -22,7 +20,7 @@ export const GeometricFigMove = ({
 
   return (
     <GameContainer>
-      {shapes.map(({ id, image, figure }) => (
+      {/* {shapes.map(({ id, image, figure }) => (
         <MoveFigure
           key={id}
           src={image}
@@ -30,7 +28,7 @@ export const GeometricFigMove = ({
           active={activeId === id}
           animationFigure={figure}
         />
-      ))}
+      ))} */}test
     </GameContainer>
   )
 }

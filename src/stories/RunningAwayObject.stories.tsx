@@ -7,9 +7,8 @@ export default {
 } as ComponentMeta<typeof RunningAwayObject>
 
 const GeometricFigMoveStory: ComponentStory<typeof RunningAwayObject> = () => (
-  <RunningAwayObject/>
+  <RunningAwayObject />
 )
-
 
 export const game = GeometricFigMoveStory.bind({})
 game.args = {}

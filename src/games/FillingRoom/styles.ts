@@ -1,12 +1,10 @@
-import styled, {
-  FlattenSimpleInterpolation,
-} from 'styled-components'
+import styled, { FlattenSimpleInterpolation } from 'styled-components'
 
-export const Furniture =
-  styled.img <
-  { position: FlattenSimpleInterpolation } >
-  `
-position: absolute;
-width: 20%;
-${({ position }) => position}
+export const Furniture = styled.img<{ styles: FlattenSimpleInterpolation }>`
+  position: absolute;
+  ${({ styles }) => styles}
+  @media (max-width: 768px) {
+    flex-direction: column;
+    max-height: 150px;
+  }
 `

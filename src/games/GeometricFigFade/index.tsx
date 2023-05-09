@@ -7,9 +7,7 @@ import { GameContainer } from './../../styles'
 import { IGeometricFigMoveProps } from '../GeometricFigMove/types'
 import { FadeFigure } from './styles'
 
-export const GeometricFigFade = ({
-  speed = 5,
-}: IGeometricFigMoveProps) => {
+export const GeometricFigFade = ({ speed = 5 }: IGeometricFigMoveProps) => {
   const [activeId, setActiveId] = useState(0)
 
   useEffect(() => {
@@ -23,7 +21,7 @@ export const GeometricFigFade = ({
 
   return (
     <GameContainer>
-      {shapes.map(({ id, image, figure }) => (
+      {/* {shapes.map(({ id, image, figure }) => (
         <FadeFigure
           speed={speed}
           key={id}
@@ -31,7 +29,7 @@ export const GeometricFigFade = ({
           active={activeId === id}
           animationFigure={figure}
         />
-      ))}
+      ))} */}test
     </GameContainer>
   )
 }
