@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-expressions */
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { shapes } from './../../assets/figures'
 import { GameContainer } from './../../styles'
@@ -17,19 +16,20 @@ export const GeometricFigFade = ({ speed = 5 }: IGeometricFigMoveProps) => {
         : setActiveId(activeId + 1)
     }, speed * 1000)
     return () => clearInterval(shapeInterval)
-  }, [activeId, speed])
+  }, [activeId])
 
   return (
     <GameContainer>
-      {/* {shapes.map(({ id, image, figure }) => (
+      {shapes.map(({ id, figure }) => (
         <FadeFigure
           speed={speed}
           key={id}
-          src={image}
+          figure={figure}
+          // src={image}
           active={activeId === id}
           animationFigure={figure}
         />
-      ))} */}test
+      ))}
     </GameContainer>
   )
 }
