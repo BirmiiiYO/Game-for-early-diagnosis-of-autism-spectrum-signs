@@ -9,6 +9,5 @@ export interface IFigureStyle {
 
 export interface IShapes {
   id: number
-  image: string
   figure: TFigure
 }
